@@ -8,16 +8,18 @@ body {
   font-weight: 800;
 }
 
+.para {
+  font-size: 22px;
+}
+
+/* move below .para so it's most recently defined (same specificity) */
 .small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
-
-.confirm {
+/* change to an id selector for higher precedence */
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
@@ -29,7 +31,8 @@ body {
   font-size: 20px;
 }
 
-.child {
+/* add .text for higher specificity against div.text */
+.text .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
